@@ -1,1 +1,9 @@
+import pickle
+from sklearn.ensemble import RandomForestClassifier
 
+
+# Save the Random Forest model as a pickle file
+filename = 'random_forest_model.pkl'
+pickle.dump(random_forest, open(filename, 'wb'))
+
+print("Random Forest model exported as pickle file:", filename)
